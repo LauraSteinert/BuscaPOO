@@ -1,0 +1,12 @@
+/* Escreva um método chamado buscaPessoa que recebe três parâmetros: 
+um arranjo de objetos do tipo Pessoa (chamado pessoas), uma String chamada nome e um inteiro chamado idade e 
+realiza a busca sequencial por uma pessoa que tenha o nome e a idade passados como parâmetro. 
+Se encontrar uma pessoa com essas características deverá retornar a referência a essa pessoa, caso contrário, deverá retornar null. */
+
+static Pessoa buscaPessoa(Pessoa[] pessoas, String nome, int idade){
+for (int i=0; i<pessoas.length; i++){
+            if(pessoas[i].nome == nome && pessoas[i].idade == idade)
+                return pessoas[i];
+        }
+        return null;
+ }
